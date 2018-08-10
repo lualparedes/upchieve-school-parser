@@ -1,0 +1,6 @@
+# Positions of the fields that determine if G9-12 are offered
+FIELDS_OF_INTEREST = [53, 54, 55, 56]
+
+
+# Constant for testing
+FILE_PATH = '/global/path/to/test/test_data.csv'
