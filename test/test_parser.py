@@ -3,12 +3,13 @@ import unittest
 from config import (
     FILE_PATH_IN, FILE_PATH_OUT, 
     SCHOOLS_STR, SCHOOLS,
-    SAMPLE_RECORDS
+    SAMPLE_RECORDS,
+    HIGHSCHOOLS
 )
 from parser.__main__ import (
     import_data_from, 
     export_data_to, 
-    determine_if_is_highschool,
+    is_highschool,
     get_highschools_from
 )
 
@@ -26,16 +27,16 @@ class TestParser(unittest.TestCase):
         self.assertEqual(SCHOOLS_STR, import_data_from(FILE_PATH_OUT))
 
 
-    def test_determine_if_is_highschool(self):
-        self.assertEqual(determine_if_is_highschool(SAMPLE_RECORDS[0]), True)
-        self.assertEqual(determine_if_is_highschool(SAMPLE_RECORDS[1]), True)
-        self.assertEqual(determine_if_is_highschool(SAMPLE_RECORDS[2]), True)
-        self.assertEqual(determine_if_is_highschool(SAMPLE_RECORDS[3]), True)
-        self.assertEqual(determine_if_is_highschool(SAMPLE_RECORDS[4]), False)
+    def test_is_highschool(self):
+        self.assertEqual(is_highschool(SAMPLE_RECORDS[0]), True)
+        self.assertEqual(is_highschool(SAMPLE_RECORDS[1]), True)
+        self.assertEqual(is_highschool(SAMPLE_RECORDS[2]), True)
+        self.assertEqual(is_highschool(SAMPLE_RECORDS[3]), True)
+        self.assertEqual(is_highschool(SAMPLE_RECORDS[4]), False)
 
 
     def test_get_highschools_from(self):
-        pass
+        self.assertEqual(get_highschools_from(SCHOOLS), HIGHSCHOOLS)
 
 
 

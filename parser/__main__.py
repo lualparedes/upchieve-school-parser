@@ -35,7 +35,7 @@ def export_data_to(filename, data):
 
 
 
-def determine_if_is_highschool(record):
+def is_highschool(record):
     """Determine if a given school is a highschool
     
     Args:
