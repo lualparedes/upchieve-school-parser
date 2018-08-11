@@ -1,5 +1,7 @@
 import sys
 
+from config import FIELDS_OF_INTEREST
+
 
 
 def import_data_from(filename): 
@@ -41,6 +43,9 @@ def determine_if_is_highschool(record):
     Retruns:
         boolean
     """
+    for i in FIELDS_OF_INTEREST:
+        if record[i] == 'Yes':
+            return True
     return False
 
 
