@@ -27,8 +27,9 @@ def export_data_to(filename, data):
     Returns:
         void
     """
-    print filename
-    pass
+    exported_csv = open(filename, 'w')
+    exported_csv.write('\n'.join(data))
+    exported_csv.close()
 
 
 

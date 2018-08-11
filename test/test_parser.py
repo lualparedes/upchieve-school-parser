@@ -1,6 +1,9 @@
 import unittest
 
-from config import FILE_PATH, SCHOOLS_TABLE
+from config import (
+    FILE_PATH_IN, FILE_PATH_OUT, 
+    SCHOOLS_STR, SCHOOLS
+)
 from parser.__main__ import (
     import_data_from, 
     export_data_to, 
@@ -14,11 +17,15 @@ class TestParser(unittest.TestCase):
     """Test suite for parser"""
 
     def test_import_data_from(self):
-        self.assertEqual(import_data_from(FILE_PATH), SCHOOLS_TABLE)
+        self.assertEqual(import_data_from(FILE_PATH_IN), SCHOOLS_STR)
 
 
     def test_export_data_to(self):
-        pass
+        export_data_to(FILE_PATH_IN[:-4] + '_out.csv', SCHOOLS)
+        self.assertEqual(
+            SCHOOLS_STR,
+            import_data_from(FILE_PATH_OUT)
+        )
 
 
     def test_determine_if_is_highschool(self):
