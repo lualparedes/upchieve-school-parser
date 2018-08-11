@@ -12,6 +12,8 @@ def import_data_from(filename):
     Returns:
         a "DB table" as a list
     """
+    print 'Importing data from "{0}"...'.format(filename)
+
     csv = open(filename)
     imported_csv = csv.read()
     csv.close()
@@ -29,6 +31,7 @@ def export_data_to(filename, data):
     Returns:
         void
     """
+    print 'Exporting data to "{0}"...'.format(filename)
     exported_csv = open(filename, 'w')
     exported_csv.write('\n'.join(data))
     exported_csv.close()
@@ -64,15 +67,17 @@ def get_highschools_from(list_of_schools):
     list_of_highschools = [list_of_schools[0]]
 
     for i in range(1,len(list_of_schools)):
+        print 'Processing school {0}...'.format(i)
+
         if is_highschool(list_of_schools[i].split(',')):
             list_of_highschools.append(list_of_schools[i])
-
+    
     return list_of_highschools
 
 
 
 def main(filename):
-    schools = import_data_from(filename.split('\n'))
+    schools = import_data_from(filename).split('\n')
     highschools = get_highschools_from(schools)
     export_data_to(filename[:-4] + '_out.csv', highschools)
 
@@ -82,6 +87,7 @@ if __name__ == '__main__':
     try:
         assert sys.argv[1] != ''
     except Exception as e:
+        print 'ERROR: a valid filename must be provided as argument'
         raise
     else:
         main(sys.argv[1])

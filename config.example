@@ -2,7 +2,7 @@
 FIELDS_OF_INTEREST = [53, 54, 55, 56]
 
 
-# Constant for testing
+# Constants for testing
 FILE_PATH_IN = '/global/path/to/test/test_data.csv'
 FILE_PATH_OUT = '/global/path/to/test/test_data_out.csv'
 
@@ -37,4 +37,13 @@ SAMPLE_RECORDS = [
     ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'No', '', '', '', '', '', '', '', '', ''], 
     ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', '', '', '', '', '', '', '', '', ''], 
     ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'No', 'No', 'No', 'No', 'No', '', '', '', '', '', '', '', '', '']
+]
+
+HIGHSCHOOLS = [
+    'SURVYEAR,FIPST,STABR,STATENAME,SEANAME,LEAID,ST_LEAID,LEA_NAME,SCHID,ST_SCHID,NCESSCH,SCH_NAME,MSTREET1,MSTREET2,MSTREET3,MCITY,MSTATE,MZIP,MZIP4,PHONE,LSTREET1,LSTREET2,LSTREET3,LCITY,LSTATE,LZIP,LZIP4,UNION,OUT_OF_STATE_FLAG,SCH_TYPE_TEXT,SCH_TYPE,RECON_STATUS,GSLO,GSHI,LEVEL,VIRTUAL,BIES,SY_STATUS_TEXT,SY_STATUS,UPDATED_STATUS_TEXT,UPDATED_STATUS,EFFECTIVE_DATE,CHARTER_TEXT,PKOFFERED,KGOFFERED,G1OFFERED,G2OFFERED,G3OFFERED,G4OFFERED,G5OFFERED,G6OFFERED,G7OFFERED,G8OFFERED,G9OFFERED,G10OFFERED,G11OFFERED,G12OFFERED,G13OFFERED,AEOFFERED,UGOFFERED,NOGRADES,CHARTAUTH1,CHARTAUTHN1,CHARTAUTH2,CHARTAUTHN2,IGOFFERED,WEBSITE',
+    '2015-2016,01,AL,ALABAMA,Alabama Department Of Education,0100002,210,Alabama Youth Services,01667,210-0050,010000201667,Camps,P O Box 66,,,Mt Meigs,AL,36057,,3342153850,1601 County Rd. 57,,,Prattville,AL,36067,,000,No,Alternative Education School,4,No,07,12,3,No,No,Open,1,Open,1,03/04/16,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,NOT APPLICABLE,NOT APPLICABLE,NOT APPLICABLE,NOT APPLICABLE,R,www.dys.alabama.gov',
+    '2015-2016,01,AL,ALABAMA,Alabama Department Of Education,0100002,210,Alabama Youth Services,01706,210-0040,010000201706,McNeel Sch - Vacca Campus,8950 Roebuck Blvd,,,Birmingham,AL,35206,,2058384981,8950 Roebuck Blvd,,,Birmingham,AL,35206,,000,No,Alternative Education School,4,No,07,12,3,No,No,Open,1,Open,1,03/04/16,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,NOT APPLICABLE,NOT APPLICABLE,NOT APPLICABLE,NOT APPLICABLE,R,www.dys.alabama.gov',
+    '2015-2016,01,AL,ALABAMA,Alabama Department Of Education,0100002,210,Alabama Youth Services,01670,210-0060,010000201670,Det Ctr,P O Box 66,,,Mt Meigs,AL,36057,,3342153850,2109 Bashi Rd Bldg 509,,,Thomasville,AL,36784,,000,No,Alternative Education School,4,No,07,12,3,No,No,Open,1,Open,1,03/04/16,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,NOT APPLICABLE,NOT APPLICABLE,NOT APPLICABLE,NOT APPLICABLE,R,www.dys.alabama.gov',
+    '2015-2016,01,AL,ALABAMA,Alabama Department Of Education,0100002,210,Alabama Youth Services,00277,210-0020,010000200277,Sequoyah Sch - Chalkville Campus,P O Box 9486,,,Birmingham,AL,35220,,2056808574,1000 Industrial School Road,,,Birmingham,AL,35220,,000,No,Alternative Education School,4,No,07,12,3,No,No,Open,1,Open,1,03/04/16,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,NOT APPLICABLE,NOT APPLICABLE,NOT APPLICABLE,NOT APPLICABLE,R,www.dys.alabama.gov',
+    '2015-2016,01,AL,ALABAMA,Alabama Department Of Education,0100002,210,Alabama Youth Services,01705,210-0030,010000201705,Wallace Sch - Mt Meigs Campus,P O Box 66,,,Mount Meigs,AL,36057,,3342156039,1000 Industrial School Road,,,Mount Meigs,AL,36057,,000,No,Alternative Education School,4,No,07,12,3,No,No,Open,1,Open,1,03/04/16,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,NOT APPLICABLE,NOT APPLICABLE,NOT APPLICABLE,NOT APPLICABLE,R,www.dys.alabama.gov',
 ]
