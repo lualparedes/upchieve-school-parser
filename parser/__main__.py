@@ -1,20 +1,4 @@
 import sys
-"""
-Awesome! So yes 3 ideal changes:
-- if they type and there is no result, instead of having no box, have a box 
-where they select "My school is not listed" (i.e. so that choice shows up in 
-the search if they exhaust all the other options). To clarify, I do NOT want 
-them to just be able to type in any thing. I want verification to require them 
-to choose something from the list, because it will help us a lot with analytics. 
-All students from the same school must have the same entry in their HS field.
-- only show schools that offer at least one of grades 9,10,11,12 . 
-- first letter of each word capitalized
-
-
-"""
-
-# Positions of the fields that determine if G9-12 are offered
-FIELDS_OF_INTEREST = [53, 54, 55, 56]
 
 
 
