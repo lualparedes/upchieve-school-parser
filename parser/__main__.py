@@ -50,21 +50,29 @@ def is_highschool(record):
 
 
 
-def get_highschools_from(table_list):
+def get_highschools_from(list_of_schools):
     """Goes through each of the "school records" in a list and returns another 
     list that contains only highschools
 
     Args:
-        table_list: list (a "DB table")
+        list_of_schools: list (a "DB table")
     Returns:
         another "DB table" that contains only highschools
+    Notes:
+        Range starts in 1 because of the header
     """
-    pass
+    list_of_highschools = [list_of_schools[0]]
+
+    for i in range(1,len(list_of_schools)):
+        if is_highschool(list_of_schools[i].split(',')):
+            list_of_highschools.append(list_of_schools[i])
+
+    return list_of_highschools
 
 
 
 def main(filename):
-    schools = import_data_from(filename)
+    schools = import_data_from(filename.split('\n'))
     highschools = get_highschools_from(schools)
     export_data_to(filename[:-4] + '_out.csv', highschools)
 
