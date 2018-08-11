@@ -23,10 +23,7 @@ class TestParser(unittest.TestCase):
 
     def test_export_data_to(self):
         export_data_to(FILE_PATH_IN[:-4] + '_out.csv', SCHOOLS)
-        self.assertEqual(
-            SCHOOLS_STR,
-            import_data_from(FILE_PATH_OUT)
-        )
+        self.assertEqual(SCHOOLS_STR, import_data_from(FILE_PATH_OUT))
 
 
     def test_determine_if_is_highschool(self):
