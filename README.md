@@ -23,8 +23,11 @@ python -m test
 
 ## Possible future improvements
 
-- [ ] Format school names
+- [ ] Format school names (limit formatting to that specific field to avoid false positives)
     - [ ] Convert to *Proper Case*, while being careful with Irish surnames
     - [ ] Change `Sch` to `School`
     - [ ] Change `Acad` to `Academy`
     - [ ] Change `Lrng` to `Learning`
+    - [ ] Change `Jhs/JHS` to `Junior High School`
+    - [ ] Change `Shs/SHS` to `Senior High School`
+    - [ ] Change `Hs/HS` to `High School`
